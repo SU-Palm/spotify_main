@@ -18,11 +18,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from spotify import views as main_view
-from .views import home 
+from .views import home, signIn
 
 urlpatterns = [
     path('', home),
     path('admin/', admin.site.urls),
-    path('spotify/', include('spotify.urls'))
+    path('spotify/', include('spotify.urls')),
+    path('signIn', signIn)
 ]
 

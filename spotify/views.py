@@ -11,8 +11,6 @@ client_id = os.environ.get('CLIENT_ID')
 client_secret = os.environ.get('CLIENT_SECRET')
 redirect_uri = os.environ.get('REDIRECT_URI')
 
-def authen_spotify(request, format=None):
-    return render(request, 'spotify/signIn.html' )
 
 class AuthURL(APIView):
     def get(self, request, fornat=None):
