@@ -42,7 +42,7 @@ def is_spotify_authenticated(session_id):
             refresh_spotify_token(session_id)
 
         return True
-
+        
     return False
 
 def refresh_spotify_token(session_id):
