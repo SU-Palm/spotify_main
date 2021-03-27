@@ -100,8 +100,8 @@ class Account(AbstractBaseUser):
         # Am I saving these all to the same file? 
     match_matrix   = models.FileField(upload_to = user_directory_path, max_length = 10000)
     score_list     = models.FileField(upload_to = user_directory_path, max_length = 1000)
-    score_matrix   = models.FielField(upload_to = user_directory_path, max_length = 10000)
-    match_list     = models.FielField(upload_to = user_directory_path, max_length = 10000)
+    score_matrix   = models.FileField(upload_to = user_directory_path, max_length = 10000)
+    match_list     = models.FileField(upload_to = user_directory_path, max_length = 10000)
     unknowns_list  = models.FileField(upload_to = user_directory_path, max_length = 10000)
 
 # Use email to sign in
