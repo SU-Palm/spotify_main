@@ -116,17 +116,25 @@
       <div class = "btn-toolbar" width="900" height="380">
         <form>
             <div class = "form-group row">
-                <button class = "btn btn-sm btn-outline-secondary dropdown-toggle" style="margin:auto; margin-bottom: 50px;">Preference</button>
-            </div>
-            <div class = "form-group row">
-                <button class = "btn btn-sm btn-outline-secondary dropdown-toggle" style="margin:auto">Preference</button>
+                <h5 style="margin-bottom: 10px;">Gender Preference</h5>
+                <div class="btn-group" style = "width:200px; margin-bottom: 50px;" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-sm btn-outline-primary" for="btnradio1">Male</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-primary" for="btnradio2">Female</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-sm btn-outline-primary" for="btnradio3">Both</label>
 
             </div>
             <div class = "form-group row">
+                <h5>Age Preference</h5>
+                <label for="usernameChange" class="visually-hidden">Age</label>
+                <input type="agePreference" id="inputAgePreference" style="margin-bottom: 20px; width: 100px; margin-right: 20px;" placeholder="Max Age">
+                <button class = "btn btn-sm btn-outline-secondary" style="width:100px; text-align: center; margin-bottom: 20px; background-color: #0d6efd; border-color: #0d6efd; color:white">Save</button>
+
             </div>
-            <div class = "form-group row">
-            </div>
-            
           </form>
       </div>
 
